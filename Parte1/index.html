@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="es">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,7 +15,9 @@
   <!-- ccs de estilos -->
   <link rel="stylesheet" href="style.css">
   <!-- fuente de la página -->
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500;700&family=Source+Sans+Pro:wght@300;400;600&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
@@ -57,10 +60,8 @@
             </ul>
           </li>
           <!-- Botón tema: luna/sol accesible -->
-          <button id="toggleThemeBtn"
-                  class="btn btn-outline-light ms-2 d-flex align-items-center"
-                  type="button"
-                  aria-label="Cambiar entre tema claro y oscuro">
+          <button id="toggleThemeBtn" class="btn btn-outline-light ms-2 d-flex align-items-center" type="button"
+            aria-label="Cambiar entre tema claro y oscuro">
             <i class="bi bi-moon-fill" aria-hidden="true"></i>
             <span class="visually-hidden" id="themeText">Tema oscuro</span>
           </button>
@@ -115,7 +116,7 @@
             <div class="carousel-inner">
               <!--1-->
               <div class="carousel-item active">
-                <img src="imagenes/40.jpg" class="d-block w-100" alt="Té 1">
+                <img src="https://picsum.photos/seed/tea1/200/300/?blur" class="d-block w-100">
                 <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-2">
                   <h5>Té caliente</h5>
                   <p>Perfecto para comenzar tu día.</p>
@@ -124,7 +125,8 @@
 
               <!-- Foto 2-->
               <div class="carousel-item">
-                <img src="imagenes/52.jpg" class="d-block w-100" alt="Té 2">
+                <img src="https://picsum.photos/seed/tea2/200/300/?blur"
+                  class="d-block w-100">
                 <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-2">
                   <h5>Siempre fresco</h5>
                   <p>El té desde su origen..</p>
@@ -133,7 +135,8 @@
 
               <!-- Foto 3-->
               <div class="carousel-item">
-                <img src="imagenes/49.jpg" class="d-block w-100" alt="Té 3">
+                <img src="https://picsum.photos/seed/tea3/200/300/?blur"
+                  class="d-block w-100">
                 <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-2">
                   <h5>La infusión perfecta</h5>
                   <p>Temperatura y tiempo ideales.</p>
@@ -142,7 +145,8 @@
 
               <!-- Foto 4 -->
               <div class="carousel-item">
-                <img src="imagenes/23.jpg" class="d-block w-100" alt="Té 4">
+                <img src="https://picsum.photos/seed/tea4/200/300/?blur"
+                  class="d-block w-100">
                 <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-2">
                   <h5>Variedad premium</h5>
                   <p>Un viaje a través de los sentidos.</p>
@@ -387,10 +391,11 @@
 
   <!-- Toast genérico (reutilizable) -->
   <div class="toast-container position-fixed bottom-0 end-0 p-3">
-    <div id="formToast" class="toast align-items-center text-bg-dark border-0" role="alert" aria-live="assertive"
+    <div id="formToast" class="toast align-items-center border-0" role="alert" aria-live="assertive"
       aria-atomic="true">
       <div class="d-flex">
         <div id="formToastBody" class="toast-body">
+          
           <!-- Texto dinámico desde JS -->
         </div>
         <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
@@ -399,9 +404,11 @@
     </div>
   </div>
 
-  <!-- JS Bootstrap -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- JS propio -->
-  <script src="script.js"></script>
+    <!-- JS Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- JS script -->
+    <script src="script.js"></script>
 </body>
+
 </html>
