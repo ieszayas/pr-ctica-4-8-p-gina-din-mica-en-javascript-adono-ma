@@ -259,6 +259,7 @@ body.dark-mode #teaCarousel .carousel-control-next {
 
 body.dark-mode #teaCarousel .carousel-indicators [data-bs-target],
 body.dark-mode #teaCarousel .carousel-indicators .active {
+  height: 0em;
   background-color: var(--zen-gold);
   border-color: var(--zen-gold);
 }
@@ -295,3 +296,22 @@ body.dark-mode .btn-tea,
 body.dark-mode .btn-reset {
   color: #fff;
 }
+
+/* Servicios: */
+/* Contenedor principal para alinear */
+@media (min-width: 1200px) {
+  main .row:first-of-type::after {
+    content: '';
+    display: block;
+    height: 20vh; /* Espacio para bajar servicios */
+  }
+  
+  #servicios {
+    margin-top: 0;
+    position: relative;
+    top: 33vh;
+    
+  }
+}
+
+
