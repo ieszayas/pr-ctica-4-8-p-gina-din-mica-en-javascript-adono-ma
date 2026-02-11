@@ -1,0 +1,317 @@
+/* Variables globales claro/oscuro */
+:root {
+  --zen-gold: #D97706;
+  --zen-brown: #8B4513;
+  --bg-tea: linear-gradient(135deg, #597901, #b46203);
+  --bg-tea-dark: linear-gradient(135deg, #2d5016, #5a2d0f);
+  --card-dark-bg: #1e1e1e;
+  --text-dark: #f5f5f5;
+  --border-dark: #333;
+}
+
+/* Fuentes temáticas */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500;700&display=swap');
+
+body {
+  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f8f9fa;
+}
+
+h1, h2, h3, h4, h5, h6, .navbar-brand {
+  font-family: 'Noto Serif SC', serif;
+  font-weight: 400;
+}
+
+.card-title {
+  font-family: 'Noto Serif SC', serif;
+  font-weight: 500;
+}
+
+/* Colores té claros */
+.bg-tea {
+  background: var(--bg-tea);
+}
+
+.btn-tea {
+  background: var(--zen-gold);
+  border-color: var(--zen-gold);
+  color: #fff;
+}
+
+.btn-tea:hover {
+  background: #b96806;
+}
+
+.btn-reset {
+  background: #597901;
+  border-color: #597901;
+  color: #fff;
+}
+
+.btn-reset:hover {
+  background: #476d2d;
+}
+
+/* Navbar y footer claros */
+.navbar.bg-tea {
+  background: var(--bg-tea);
+}
+
+.footer.bg-tea {
+  background: var(--bg-tea);
+}
+
+/* Galería, carrusel, cards */
+.navbar-brand i {
+  font-size: 1.5rem;
+}
+
+.navbar .dropdown-menu {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+}
+
+.card-img-top,
+.img-fluid {
+  height: 200px;
+  object-fit: cover;
+}
+
+.carousel-item img {
+  height: 350px;
+  object-fit: cover;
+  object-position: center;
+}
+
+#teaCarousel .carousel-caption {
+  bottom: 2rem;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  margin-bottom: 0.75rem;
+}
+
+.card-text {
+  flex-grow: 1;
+}
+
+.badge {
+  align-self: flex-start;
+}
+
+/* Tabla té clara */
+.table-tea {
+  background: #f1c182;
+  color: var(--zen-brown);
+}
+
+@media (max-width: 768px) {
+  .carousel-item img { 
+    height: 250px; 
+  }
+  .card-img-top, 
+  .img-fluid { 
+    height: 180px; 
+  }
+}
+
+.page-tipos header h1 { 
+  letter-spacing: 0.03em; 
+}
+.page-tipos .card-title { 
+  color: var(--zen-brown); 
+}
+.page-tipos .card { 
+  border: none; 
+}
+
+.page-ceremonia header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  padding-bottom: 0.75rem;
+}
+.page-ceremonia h1 { 
+  letter-spacing: 0.05em; 
+}
+.page-ceremonia .list-group-item { 
+  border-left: 4px solid var(--zen-gold); 
+}
+.page-ceremonia .card-img-top { 
+  object-fit: cover; 
+}
+
+/* =================================== MODO OSCURO - TÉ TEMÁTICO ====================================== */
+body.dark-mode {
+  background-color: #121212;
+  color: #f5f5f5;
+}
+
+/* Navbar/footer oscuro - COLORES TÉ OSCUROS */
+body.dark-mode .navbar,
+body.dark-mode .navbar.bg-tea {
+  background: var(--bg-tea-dark);
+}
+
+body.dark-mode .footer,
+body.dark-mode .footer.bg-tea {
+  background: var(--bg-tea-dark);
+  color: #f5f5f5;
+}
+body.dark-mode #footer a,
+body.dark-mode #footer * {
+  color: #f5f5f5;
+}
+
+/* Dropdown oscuro */
+body.dark-mode .navbar .dropdown-menu {
+  background-color: #2a2a2a;
+  border-color: #444;
+  color: #f5f5f5;
+}
+body.dark-mode .dropdown-item { 
+  color: #f5f5f5; 
+}
+body.dark-mode .dropdown-item:hover {
+  background-color: #444;
+  color: #fff;
+}
+
+/* Cards y elementos BLANCOS -> OSCUROS */
+body.dark-mode .card,
+body.dark-mode .bg-white,
+body.dark-mode .card-body,
+body.dark-mode .card-header,
+body.dark-mode .bg-light,
+body.dark-mode div[class*="bg-"] {
+  background-color: var(--card-dark-bg) !important;
+  color: var(--text-dark);
+  border-color: var(--border-dark) !important;
+}
+
+/* TABLA TÉ OSCURA - COMPLETO (reemplaza la sección anterior) */
+body.dark-mode #tabla .table,
+body.dark-mode #tabla .table thead.table-tea,
+body.dark-mode #tabla .table thead th,
+body.dark-mode #tabla .table tbody tr,
+body.dark-mode #tabla .table tbody td,
+body.dark-mode #tabla .table-striped > tbody > tr:nth-of-type(odd) > td,
+body.dark-mode #tabla .table-hover > tbody > tr:hover > td {
+  background-color: #2a4a2a !important;
+  background-image: none !important;
+  box-shadow: inset 0 0 0 9999px #2a4a2a !important;
+  color: var(--text-dark) !important;
+  border-color: var(--border-dark) !important;
+}
+
+body.dark-mode #tabla .table thead.table-tea th {
+  color: #f0d9b5 !important;
+  border-bottom-color: #597901  !important;
+}
+
+/* GUIA RÁPIDA .list-group (dentro card) - MÁS ESPECÍFICO */
+body.dark-mode .guia-rapida .list-group,
+body.dark-mode .guia-rapida .list-group-flush,
+body.dark-mode .card .list-group,
+body.dark-mode .card .list-group-flush,
+body.dark-mode .table-tea {
+  background-color: var(--card-dark-bg);
+}
+body.dark-mode .guia-rapida .list-group-item,
+body.dark-mode .card .list-group-item,
+body.dark-mode .table-tea {
+  background-color: var(--card-dark-bg);
+  color: var(--text-dark);
+  border-color: var(--border-dark);
+}
+
+/* BOTONES PAÍSES (Japón, China, etc.) - ESPECÍFICO Y VISIBLE */
+body.dark-mode .guia-rapida .list-group-item .btn,
+body.dark-mode .card .list-group-item .btn,
+body.dark-mode .list-group-item .btn-país,
+body.dark-mode .btn-pais {
+  background-color: var(--zen-gold) !important;
+  color: #fff !important;
+  border-color: var(--zen-gold) !important;
+}
+body.dark-mode .guia-rapida .list-group-item .btn:hover,
+body.dark-mode .card .list-group-item .btn:hover,
+body.dark-mode .list-group-item .btn-país:hover {
+  background-color: #b96806 !important;
+}
+
+/* Carrusel oscuro */
+body.dark-mode #teaCarousel.carousel,
+body.dark-mode #teaCarousel .carousel-inner,
+body.dark-mode #teaCarousel .carousel-item {
+  background-color: var(--card-dark-bg);
+}
+
+body.dark-mode #teaCarousel .carousel-control-prev,
+body.dark-mode #teaCarousel .carousel-control-next {
+  filter: invert(1);
+}
+
+body.dark-mode #teaCarousel .carousel-indicators [data-bs-target],
+body.dark-mode #teaCarousel .carousel-indicators .active {
+  height: 0em;
+  background-color: var(--zen-gold);
+  border-color: var(--zen-gold);
+}
+
+body.dark-mode #teaCarousel .carousel-indicators li {
+  background-color: #666;
+  border-color: #666;
+}
+
+/* Formularios, alertas, etc. */
+body.dark-mode .form-control,
+body.dark-mode .form-select {
+  background-color: #222 !important;
+  color: #f5f5f5 !important;
+  border-color: #444 !important;
+}
+body.dark-mode .form-control::placeholder { 
+  color: #aaaaaa !important; 
+}
+body.dark-mode .form-check-label { 
+  color: #f5f5f5 !important; 
+}
+body.dark-mode .alert-success {
+  background-color: #1a5f1a !important;
+  color: #f5f5f5 !important;
+  border-color: #2d7d32 !important;
+}
+body.dark-mode .text-muted { 
+  color: #bbbbbb !important; 
+}
+
+/* Botones té */
+body.dark-mode .btn-tea,
+body.dark-mode .btn-reset {
+  color: #fff;
+}
+
+/* Servicios: */
+/* Contenedor principal para alinear */
+@media (min-width: 1200px) {
+  main .row:first-of-type::after {
+    content: '';
+    display: block;
+    height: 20vh; /* Espacio para bajar servicios */
+  }
+  
+  #servicios {
+    margin-top: 0;
+    position: relative;
+    top: 33vh;
+    
+  }
+}
+
+
